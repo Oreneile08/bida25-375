@@ -1,0 +1,143 @@
+/* Global dark mode */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Example header */
+header {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Button in dark mode */
+button {
+    background-color: #2a2626;
+    color: #000000;
+    padding: 10px 20px;
+    border: #f2f2f71b solid 1px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+
+/* Example card with dark background */
+.card {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #dadae31b;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+/* Button in dark mode */
+button {
+    background-color: #282727;
+    color: #423f3f;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #2f2b2b;
+}
+
+/* Footer in dark mode */
+footer {
+    background-color: #1f1f1f;
+    color: #fcf9f9;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* ===== DARK MODE ===== */
+body {
+    background: #0f0f14;
+    color: #fff;
+    font-family: Arial;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    width: 380px;
+    margin: 40px auto;
+    background: #1a1a22;
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid #2a2a35;
+}
+
+/* ===== HEADINGS ===== */
+h2 {
+    text-align: center;
+    color: #ff4da6;
+}
+
+/* ===== INPUTS ===== */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    background: #2a2a35;
+    border: 1px solid #444;
+    border-radius: 10px;
+    color: white;
+}
+
+/* ===== LABELS ===== */
+label {
+    display: block;
+    margin-top: 8px;
+}
+
+/* ===== PROGRESS BAR ===== */
+.progress-bar {
+    height: 6px;
+    background: #2a2a35;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.progress {
+    height: 100%;
+    width: 33%;
+    background: linear-gradient(90deg, #ff4da6, #ff80bf);
+}
+
+/* ===== STEPS ===== */
+.step {
+    display: none;
+}
+.step.active {
+    display: block;
+}
+
+/* ===== BUTTON ===== */
+.next-btn {
+    width: 100%;
+    padding: 14px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* ===== FIXED BUTTON ===== */
+.nav-buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #1a1a22;
+    padding: 15px;
+    border-top: 1px solid #333;
+}
