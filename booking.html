@@ -142,60 +142,12 @@
 
 </div>
 
-<script src="script.js"></script>
-
 <!-- BUTTON -->
 <div class="nav-buttons">
     <button class="next-btn" onclick="handleNext()">Proceed</button>
 </div>
 
-<script>
-let currentStep = 0;
-const steps = document.querySelectorAll(".step");
-const progress = document.getElementById("progress");
-const button = document.querySelector(".next-btn");
 
-function showStep(index) {
-    steps.forEach((step, i) => {
-        step.classList.remove("active");
-        if (i === index) step.classList.add("active");
-    });
-
-    progress.style.width = ((index + 1) / steps.length) * 100 + "%";
-
-    if (index === steps.length - 1) {
-        button.textContent = "Confirm Booking";
-    } else {
-        button.textContent = "Proceed to Next";
-    }
-}
-
-function handleNext() {
-    let inputs = steps[currentStep].querySelectorAll("input[required]");
-    let valid = true;
-
-    inputs.forEach(input => {
-        if (!input.value) {
-            input.style.border = "2px solid red";
-            valid = false;
-        } else {
-            input.style.border = "1px solid #444";
-        }
-    });
-
-    if (!valid) {
-        alert("Please fill in required fields");
-        return;
-    }
-
-    if (currentStep < steps.length - 1) {
-        currentStep++;
-        showStep(currentStep);
-    } else {
-        alert("Booking Confirmed ✅");
-    }
-}
-</script>
 
 </body>
 </html>
