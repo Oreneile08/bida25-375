@@ -1,0 +1,539 @@
+body {
+    background-color: #121212;
+    color: #fbf9f9;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 100px;
+    text-align: center;
+    color: rgb(234, 233, 233);
+}
+
+
+a:hover {
+    color: #f6f1f1;
+}
+
+button {
+    background-color: #333333;
+    color: #edf2f2;
+    border: none;
+    padding: 10px;
+}
+
+
+.card, .section {
+    background-color: #151516;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+nav {
+    background-color: #000000;
+}
+
+nav ul li a {
+    color: #faf6f6;
+}
+
+nav ul li a:hover {
+    color: #bb86fc;
+}
+
+/* ===== FIXED BUTTON ===== */
+.nav-buttons {
+    position: flex;
+    bottom: 0;
+    width: 100%;
+    background: #1a1a22;
+    padding: 10px;
+    border-top: 1px solid #a8a7a7;
+}
+
+.card {
+  min-width: 350px;
+  padding: 10px;
+  text-align: center;
+  word-break: normal; /* prevents letter-by-letter breaking */
+}
+
+/* ===== HEADINGS ===== */
+h2 {
+    text-align: center;
+    color: #f8f4f6;
+}
+
+
+/* ===== CONTAINER ===== */
+.container {
+    width: 95%;
+    margin: 50px auto;
+    background: #101016;
+    padding: 25px;
+    border: 1px solid #222226;
+    border-radius: 10px;
+}
+
+
+
+:root {
+    --border-color: #333333;
+    --bg-light: #050404;
+    --text-main: #222222;
+    --text-muted: #666666;
+    --accent-dark: #333333;
+    --accent-light: #fbf6f6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: #2e2e2e;
+    padding: 100px;
+    color: var(--text-main);
+}
+
+.booking-container {
+    max-width: 90px;
+    margin: 0 auto;
+    background: #1b1818;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 24px;
+}
+
+/* Header Section */
+.booking-header {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.booking-header h2 {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.booking-header p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+/* Steps Layout Grid */
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+.step-card {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 16px;
+    background: var(--bg-light);
+    min-height: 580px;
+}
+
+.step-badge {
+    background: var(--accent-dark);
+    color: rgb(253, 252, 253);
+    display: inline-block;
+    padding: 3px 12px;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.step-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.step-sub {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+/* Step 1: Services CSS */
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.service-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #a7a7af;
+    transition: background 0.2s;
+}
+
+.service-option:hover {
+    background: var(--accent-light);
+}
+
+.service-info strong {
+    display: block;
+    font-size: 0.9rem;
+}
+
+.service-info span {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.3;
+}
+
+.service-option input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--accent-dark);
+}
+
+/* Step 2: Calendar & Time CSS */
+.calendar-box {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 10px;
+    background: #c0cbc8;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.calendar-header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.calendar-table th, .calendar-table td {
+    padding: 6px 2px;
+    width: 14.2%;
+}
+
+.calendar-table th {
+    color: var(--text-muted);
+    font-weight: normal;
+}
+
+.active-day {
+    border: 1px solid var(--border-color);
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.time-slots {
+    margin-top: 15px;
+}
+
+.slots-title {
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.slots-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+}
+
+.slot-btn {
+    border: 1px solid var(--border-color);
+    background: rgb(64, 60, 60);
+    padding: 6px 2px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.slot-btn.active-slot {
+    background: var(--accent-dark);
+    color: rgb(203, 179, 179);
+}
+
+.timezone-text {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 8px;
+}
+
+/* Step 3: Input Form CSS */
+.client-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.form-group textarea {
+    height: 80px;
+    resize: none;
+}
+
+.form-group small {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.primary-btn {
+    background: var(--accent-dark);
+    color: rgb(187, 179, 179);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Step 4: Confirmation Summary CSS */
+.summary-box {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 10px;
+    background: #968d8d;
+    margin-bottom: 12px;
+}
+
+.summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+}
+
+.summary-header h4 {
+    font-size: 0.9rem;
+}
+
+.edit-link {
+    font-size: 0.8rem;
+    color: var(--text-main);
+}
+
+.summary-list {
+    list-style: none;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.summary-list li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary-list span {
+    color: var(--text-muted);
+}
+
+.deposit-box {
+    background: var(--accent-light);
+    border-radius: 4px;
+    padding: 8px;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+}
+
+.payment-methods {
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+}
+
+.payment-methods ul {
+    list-style: none;
+    margin-top: 4px;
+    padding-left: 5px;
+}
+
+.upload-zone {
+    border: 1px dashed var(--border-color);
+    border-radius: 4px;
+    padding: 12px;
+    text-align: center;
+    background: #d0caca;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.upload-icon {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.upload-zone strong {
+    font-size: 0.85rem;
+    display: block;
+}
+
+.upload-zone p {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    line-height: 1.3;
+}
+
+.terms-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    font-size: 0.75rem;
+    margin-bottom: 15px;
+}
+
+.terms-group input {
+    margin-top: 2px;
+}
+
+.terms-group a {
+    color: var(--text-main);
+    display: block;
+    margin-top: 2px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.confirm-btn, .cancel-btn {
+    flex: 1;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.confirm-btn {
+    background: var(--accent-dark);
+    color: rgb(195, 188, 188);
+    border: none;
+}
+
+.cancel-btn {
+    background: white;
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+}
+
+/* Cancellation Warning Box Footer */
+.cancellation-box {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    background: var(--bg-light);
+}
+
+.cancel-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.alert-icon {
+    font-size: 1.3rem;
+}
+
+.cancel-message strong {
+    font-size: 0.9rem;
+    display: block;
+}
+
+.cancel-message p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.cancel-booking-btn {
+    background: rgb(66, 56, 56);
+    border: 1px solid var(--border-color);
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+/* Trust Info Footer */
+.trust-footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 20px;
+    border-top: 1px solid var(--accent-light);
+    padding-top: 15px;
+}
+
+/* Responsive Scaling optimization */
+@media (max-width: 768px) {
+    .cancellation-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cancel-booking-btn {
+        width: 100%;
+    }
+}
