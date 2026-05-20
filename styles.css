@@ -1,0 +1,125 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    color: white;
+}
+
+.nav-custom-white {
+    background-color: white;
+    border-bottom: 3px solid #D4AF37;
+}
+
+.nav-custom-white .nav-link {
+    color: black;
+    font-weight: bold;
+}
+
+.nav-custom-white .nav-link:hover {
+    color: #D4AF37;
+    background-color: #f0f0f0;
+}
+
+.nav-custom-white .nav-link.active {
+    background-color: #D4AF37;
+    color: black;
+}
+
+header {
+    text-align: center;
+}
+
+.text-gold {
+    color: #D4AF37;
+}
+
+.btn-gold {
+    background-color: #D4AF37;
+    border: 2px solid #D4AF37;
+    color: black;
+    font-weight: bold;
+}
+
+.btn-gold:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-gold-dark {
+    background-color: black;
+    border: 1px solid #D4AF37;
+    color: #D4AF37;
+}
+
+.btn-gold-dark:hover {
+    background-color: #D4AF37;
+    color: black;
+}
+
+.btn-outline-gold {
+    background-color: transparent;
+    color: #D4AF37;
+    border: 2px solid #D4AF37;
+    font-weight: bold;
+}
+
+.btn-outline-gold:hover {
+    background-color: #D4AF37;
+    color: black;
+}
+
+.card-gold {
+    background-color: #D4AF37;
+    border: 3px solid black;
+}
+
+.card-gold .card-title {
+    color: black;
+}
+
+.card-gold .card-text {
+    color: black;
+}
+
+.card-img-top {
+    height: 230px;
+}
+
+.border-gold-dim {
+    border-color: #D4AF37;
+}
+
+.service-option {
+    cursor: pointer;
+}
+
+.service-option:hover {
+    background-color: #333333;
+}
+
+.border-dashed {
+    border: 2px dashed #D4AF37;
+}
+
+#calendar-table td {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#calendar-table td:hover {
+    background-color: #333333;
+}
+
+#calendar-table td.active-day {
+    background-color: #D4AF37;
+    color: black;
+}
+
+.slot-btn.active-slot {
+    background-color: #D4AF37;
+    color: black;
+    border-color: #D4AF37;
+}
