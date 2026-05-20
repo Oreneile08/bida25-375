@@ -1,0 +1,174 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Booking - Renee's Nail Haven</title> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css"> 
+</head> 
+<body class="bg-black text-white"> 
+
+    <nav class="navbar navbar-expand-lg nav-custom-white py-2">
+        <div class="container justify-content-center">
+            <ul class="nav nav-pills header-nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="booking.html">Booking</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="container text-center py-5"> 
+        <h1 class="text-gold">Book an Appointment</h1> 
+    </header> 
+
+    <main class="container my-2 pb-5" style="max-width: 750px;"> 
+        
+        <form id="single-page-booking-form">
+
+            <div class="card card-gold p-4 text-black fw-bold mb-4">
+                <h3 class="h5 border-bottom border-dark pb-2 mb-3">1. Select a Service</h3>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="service" id="service1" value="Gel Overlay">
+                    <label class="form-check-label" for="service1">Gel Overlay : P100</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="service" id="service2" value="Polygel Extensions">
+                    <label class="form-check-label" for="service2">Polygel Extensions : P150</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="service" id="service3" value="Nail Art Design">
+                    <label class="form-check-label" for="service3">Nail Art Design : P10</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="service" id="service4" value="French Tips">
+                    <label class="form-check-label" for="service4">French Tips : P130</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="service" id="service5" value="Pedicure">
+                    <label class="form-check-label" for="service5">Pedicure : P80</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="service" id="service6" value="Soak-Off">
+                    <label class="form-check-label" for="service6">Soak-Off : P80</label>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label small">Inspiration Image *</label>
+                    <input type="file" id="payment-file-input" class="form-control" required accept="image/*">
+                </div>
+            </div>
+
+            <div class="card card-gold p-4 text-black fw-bold mb-4">
+                <h3 class="h5 border-bottom border-dark pb-2 mb-3">2. Date and Time Picker</h3>
+                <div class="row text-white g-3">
+                    <div class="col-md-7">
+                        <div class="bg-black p-3 rounded text-center">
+                            <div class="mb-2 text-gold">May 2026</div>
+                            <table class="table table-sm table-borderless text-white mb-0" id="calendar-table">
+                                <thead>
+                                    <tr class="text-gold"><th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td class="active-day">12</td><td>13</td></tr>
+                                    <tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>
+                                    <tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td></tr>
+                                    <tr><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="bg-black p-3 rounded h-100">
+                            <div class="text-gold mb-2">Available Hours</div>
+                            <div class="row g-2 text-center">
+                                <div class="col-6"><button type="button" class="btn btn-outline-gold btn-sm w-100 slot-btn">10:00 AM</button></div>
+                                <div class="col-6"><button type="button" class="btn btn-outline-gold btn-sm w-100 slot-btn">11:00 AM</button></div>
+                                <div class="col-6"><button type="button" class="btn btn-outline-gold btn-sm w-100 slot-btn active-slot">2:00 PM</button></div>
+                                <div class="col-6"><button type="button" class="btn btn-outline-gold btn-sm w-100 slot-btn">3:00 PM</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-gold p-4 text-black fw-bold mb-4">
+                <h3 class="h5 border-bottom border-dark pb-2 mb-3">3. Client Information</h3>
+                <div class="mb-3">
+                    <label class="form-label small">Full Name *</label>
+                    <input type="text" id="client-name-input" class="form-control" required placeholder="Enter your first and last name">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label small">Phone Number *</label>
+                    <input type="tel" id="client-phone-input" class="form-control" required placeholder="Enter your mobile number">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label small">Email Address *</label>
+                    <input type="email" id="client-email-input" class="form-control" required placeholder="Enter your email address">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label small">Inspiration Image *</label>
+                    <input type="file" id="client-inspiration-input" class="form-control" required accept="image/*">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label small">Additional Notes</label>
+                    <textarea id="client-notes-input" class="form-control" rows="3" placeholder="Any specific requests or information you'd like to share"></textarea>
+                </div>
+            </div>
+
+            <div class="card card-gold p-4 text-black fw-bold mb-4">
+                <h3 class="h5 border-bottom border-dark pb-2 mb-3">4. Summary & Deposit Requirement</h3>
+                
+                <div class="bg-black p-3 rounded text-white mb-3">
+                    <p class="text-gold small mb-1">Booking Summary:</p>
+                    <span class="text-gold small d-block">Full Name: <strong id="selected-name-text" class="text-white">None</strong></span>
+                    <span class="text-gold small d-block">Selected Package: <strong id="selected-service-text" class="text-white">None</strong></span>
+                    <span class="text-gold small d-block">Appointment Date: <strong id="selected-date-text" class="text-white">12 May 2026</strong></span>
+                    <span class="text-gold small d-block mb-2">Appointment Time: <strong id="selected-time-text" class="text-white">2:00 PM</strong></span>
+                    
+                    
+                    <span class="text-gold fs-6">Total Estimated Cost:</span>
+                    <strong class="d-block text-white fs-3" id="final-total-output">P0</strong>
+                </div>
+
+                <div class="bg-black p-3 rounded text-white border border-secondary mb-3">
+                    <p class="text-gold small mb-1">Mobile Money Accounts Matrix:</p>
+                    <ul class="list-unstyled mb-0 small font-monospace">
+                        <li>· Orange Money: +267 74 328 122</li>
+                        <li>· Pay2Cell: +267 74 328 122</li>
+                    </ul>
+                    <div>
+                  ('Please make a deposit of 50% to secure your booking. Full payment is required on the day of your appointment. Thank you for choosing Renee\'s Nail Haven!');
+                    </div>
+                </div>
+
+            <div class="mb-3">
+            <label class="form-label small">Upload Payment Screenshot *</label>
+           <input type="file" id="payment-file-input" class="form-control" required accept="image/*">
+           </div>
+
+                <div class="form-check my-2">
+                    <input class="form-check-input border-dark" type="checkbox" id="terms" required>
+                    <label class="form-check-label small" for="terms">
+                        I agree to all booking policies & terms.
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-gold w-100 btn-lg fw-bold text-uppercase py-2">Confirm and Submit Booking</button>
+
+        </form>
+
+    </main>
+
+    <footer class="text-center py-4 border-top border-secondary mt-5">
+        <p class="text-white mb-0">© 2026 Renee's Nail Haven. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body> 
+</html>
